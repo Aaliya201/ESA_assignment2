@@ -4,15 +4,15 @@
     module.exports = function(app) {
         var cartlist = require('../controllers/cartController');
 
-// cartList Routes
+// Cart Routes
 
-// get and post request for /todos endpoints
+// get and post request for cart 
         app
         .route("/rest/v1/users/:username/cart")
         .get(cartlist.listofallitems)
         .post(cartlist.addmoreitems);
     
-//  put and delete request for Users endpoints
+//  put and delete request for cart with username 
         app
         .route("/rest/v1/users/:username/cart/:productid")
         .put(cartlist.updateCart)
