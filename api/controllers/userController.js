@@ -25,7 +25,7 @@ res.status(201).json(user);
 });
 };
 
- //updateUser function - To update user status by id
+ //updateUser function - To update user status by username
 exports.updateUser = (req, res) => {
 User.findOneAndUpdate({ username:req.params.username }, req.body, { new:true }, (err, user) => {
 if (err) {
@@ -35,7 +35,7 @@ res.status(200).json(user);
 });
 };
 
-// deleteUser function - To delete user by userid
+// deleteUser function - To delete user by username
 exports.deleteUser = async ( req, res) => {
 await  User.deleteOne({ username:req.params.username }, (err) => {
 if (err) {
