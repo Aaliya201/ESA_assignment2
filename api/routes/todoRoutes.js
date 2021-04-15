@@ -4,15 +4,15 @@
     module.exports = function(app) {
         var todoList = require('../controllers/todoController');
 
-// todoList Routes
+// Product Routes
 
-// get and post request for /todos endpoints
+// get and post request for Products 
         app
         .route("/rest/v1/products")
         .get(todoList.listAllTodos)
         .post(todoList.createNewTodo);
     
-//put and delete request for /todos endpoints
+//put and delete request for Products
         app
         .route("/rest/v1/products/:productid")
         .put(todoList.updateTodo)
