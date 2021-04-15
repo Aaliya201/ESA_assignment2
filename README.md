@@ -1,4 +1,4 @@
-# ESA_assignment2
+# ESA Assignment-2 (Cart Microservice)
 This assignment tasks the students to create an e-commerce microservice which has three components. Users, Products and Cart. These three components are coded seperately using the controller-route-models hieracrchy. The user interacts with the products provided and adds it tothe cart. The code is viewed from the admin view and is in control of adding new products, users and inspecting/updating and deleting their carts.
 
 ## Getting Started
