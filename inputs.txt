@@ -1,0 +1,1 @@
+"productid":24956,"Category":"phones","productName":"aria","ProductModel":"iphone","price":42000,"availablequantity":1,"createdOn":"2021-03-31T19:18:50.586Z","__v":0},{"_id":"60786f507fa07101eccf61fa","productid":17468304,"Category":"aria","productName":"i-phone","ProductModel":"phoneeeee","price":50000,"availablequantity":1
