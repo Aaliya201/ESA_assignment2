@@ -25,6 +25,34 @@ res.status(201).json(cart);
 });
 };
 
+ 
+ //Update cart
+ exports.updateCart = (req, res) => {
+    Cart.findOne({username:req.params.username}, req.body, { new:true }, (err, cart) => {
+        Cart.findOneAndUpdate({productid:req.params.productid},req.body,{new:true},(err,cart) =>{
+    if (err) {
+    res.status(500).send(err);
+    }
+    res.status(200).json(cart);
+    })
+    });
+    };
+
+//delete product from the cart of a praticular user
+    exports.deleteCart = async ( req, res) => {
+        await  Cart.findOne({username:req.params.username},(err)=> {
+            Cart.findOneAndDelete({productid:req.params.productid},(err)=> {
+        console.log(req.params.username)   
+        if (err) {
+        return res.status(404).send(err);
+        }
+        res.status(200).json({ message:"Cart successfully deleted"});
+        })
+        });
+        };
+};
+
+/*
  //updateCart function - To update Cart status by username
 exports.updateCart = (req, res) => {
 Cart.findOneAndUpdate({ username:req.params.username,productid:req.params.productid, }, req.body, { new:true }, (err, cart) => {
@@ -33,7 +61,7 @@ res.status(500).send(err);
 }
 res.status(200).json(cart);
 });
-};
+ 
 
 // deleteCart function - To delete Cart by username
 exports.deleteCart = async ( req, res) => {
@@ -44,3 +72,4 @@ return res.status(404).send(err);
 res.status(200).json({ message:"Cart successfully deleted"});
 });
 };
+*/
