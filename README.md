@@ -18,7 +18,7 @@ To get started with the code, you will have to add your MongoDB URI link in ```c
 An example of the URI link would be "/mongodb+srv://aaliya:<password>@cluster0.0tp8a.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
   where aaliya is the username, password is your mongoDB atlas account password and myfirstDatabase would be the database you have created for the project.
 
-Another thing to take note of is whitelisting your IP address to connect with the database. This can be done by doing to Network Access tab> click on Add IP adress> Add curret IP address
+Another thing to take note of is whitelisting your IP address to connect with the database. This can be done by doing to''' Network Access''' tab> click on Add IP adress> Add curret IP address
 
 
 ### Running the code
