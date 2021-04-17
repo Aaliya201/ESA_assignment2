@@ -4,6 +4,7 @@ This assignment tasks the students to create an e-commerce microservice which ha
 ## Getting Started
 
 Download the repository and run ```npm init``` and ```npm install``` to run the necessary prerequisites
+The Code uses ```Express``` , ```Mongoose``` and ```Body Parser``` to run. The packages used are mentioned in the package file as well.
 
 ## Assignment Structure
 
@@ -18,7 +19,7 @@ To get started with the code, you will have to add your MongoDB URI link in ```c
 An example of the URI link would be "/mongodb+srv://aaliya:<password>@cluster0.0tp8a.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
   where aaliya is the username, password is your mongoDB atlas account password and myfirstDatabase would be the database you have created for the project.
 
-Another thing to take note of is whitelisting your IP address to connect with the database. This can be done by doing to ```Network Access```tab> click on  ```Add IP Address```> Add curret IP address
+Another thing to take note of is whitelisting your IP address to connect with the database in MongoDB Atlas. This can be done by going to ```Network Access```tab> click on  ```Add IP Address```> Add curret IP address
 
 
 ### Running the code
@@ -39,6 +40,7 @@ Database connection established!
 
 ##Microservice Calls
 Please refer to the routes folder to see the appropriate routes to call the microservices. 
+Postman was used to verify the calls, routes and thier implementations
 
 
 
@@ -47,4 +49,5 @@ Please refer to the routes folder to see the appropriate routes to call the micr
 
 * [Node.Js](https://nodejs.org/en/) - The web framework used
 * [MongoDb Atlas](https://www.mongodb.com/cloud/atlas) - Database Management
+* PostMan - to check routes and thier implementation
 
